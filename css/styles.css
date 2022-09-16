@@ -12,6 +12,11 @@ body{
   color: var(--color-white);
   margin: 0;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body::before {
   content: '';
   position: fixed;
@@ -21,7 +26,7 @@ body::before {
   width: 100%;
   z-index: -1;
   background: var(--color-darkblue);
-  background-image: linear-gradient(115deg, #E2DB26, #C4AD2A), url(https://images5.alphacoders.com/125/1259277.png);
+  background-image: linear-gradient(115deg, #a29d144f, #5b5118ba), url(https://images5.alphacoders.com/125/1259277.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -54,12 +59,39 @@ h1 {
 }
 
 form {
-  display: block;
   background: var(--color-darkblue-alpha);
-  padding: 2.5rem 0.625rem;
+  padding: 2.5rem 0.65rem;
   border-radius: 0.25rem;
+  max-width: 45rem;
+  line-height: 2;
+  margin: 0 auto 0.25rem auto;
 }
+
 .class-group {
-  display: flex;       
-  align-items: flex-start;
+  margin: 0 auto 1.25rem auto;
+  padding: 1.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 0.01rem;
+}
+
+#name {
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 100%;
+}
+
+.input-radio, .input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25;
+}
+
+::placeholder {
+  font-size:larger;
 }
