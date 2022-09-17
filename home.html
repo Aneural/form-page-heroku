@@ -14,22 +14,22 @@
         <p class="text-center">Thank you for taking the time to help us improve the plataform</p>
         </header>
           <form id="survey-form">
-            <div class="class-group">
+            <div class="form-group">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required>
             </div>
 
-            <div class="class-group">
+            <div class="form-group">
               <label for="email">Email</label>
               <input id="email" name="email" type="email" class="form-control" placeholder="Enter your email" required>
             </div>
 
-            <div id="class-group">
+            <div class="form-group">
               <label for="number">Age<span class="clue">(optional)</span></label>
-                <input id="number" name="number" type="number" class="form-control" min="7" max="110" required>
+                <input id="number" name="number" type="number" class="form-control" min="7" max="110" placeholder="Age" required>
             </div> 
 
-            <div class="class-group">
+            <div class="form-group">
               <p>Would option best describes you current role?</p>
               <select id="dropdown" name="role" class="form-control" required>
                 <option disabled selected value>Select current role</option>
@@ -44,7 +44,7 @@
               </select>
             </div>
 
-            <div class="class-group">
+            <div class="form-group">
               <p>would you recomend freeCodeCamp to a friend?<p>
               <label><input name="user-recommend" value="definitely" class="input-radio" type="radio" checked>Definitely</label>
               
@@ -53,7 +53,7 @@
               <label><input name="user-recommend" value="not-sure" class="input-radio" type="radio">Not sure</label>
             </div>
 
-            <div class="class-group">
+            <div class="form-group">
               <p>What is your favorite feature of freecodeCamp?</p>
               <select class="form-control" required>
                 <option disabled selected value>Select an option</option>
@@ -64,8 +64,8 @@
               </select>
             </div>
 
-            <div class="class-group">
-              <p>What would you like to see improved? <small>(check all that apply)</small></p>
+            <div class="form-group">
+              <p>What would you like to see improved? <span class="clue">(check all that apply)</span></p>
               <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end-projects</label>
               <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back end projects</label>
               <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data visualization</label>
@@ -78,11 +78,11 @@
               <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum</label>
               <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additonal courses</label>
             </div>
-            <div class="class-group">
+            <div class="form-group">
               <p>Any comments or suggestions?</p>
-              <input name="textarea" id="text-area" type="text">
+              <textarea name="textarea" class="text-area" type="text" placeholder="Enter your comment here..."></textarea>
             </div>
-            <div>
+            <div class="form-group submit-button-margin">
               <button id="submit" type="submit" class="submit-button">Submit</button>
             </div>
           </form>
