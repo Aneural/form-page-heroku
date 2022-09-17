@@ -16,22 +16,22 @@
           <form id="survey-form">
             <div class="class-group">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Enter your name" required>
+              <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required>
             </div>
 
             <div class="class-group">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="Enter your email" required>
+              <input id="email" name="email" type="email" class="form-control" placeholder="Enter your email" required>
             </div>
 
             <div id="class-group">
-              <label for="number">Age <small>(optional)</small>
-                <input id="number" name="number" type="number" min="10" max="99" required>
+              <label for="number">Age<span class="clue">(optional)</span></label>
+                <input id="number" name="number" type="number" class="form-control" min="7" max="110" required>
             </div> 
 
             <div class="class-group">
               <p>Would option best describes you current role?</p>
-              <select id="dropdown" name="role" class="form-cont">
+              <select id="dropdown" name="role" class="form-control" required>
                 <option disabled selected value>Select current role</option>
 
   <option value="student">student</opotion>
@@ -55,7 +55,7 @@
 
             <div class="class-group">
               <p>What is your favorite feature of freecodeCamp?</p>
-              <select>
+              <select class="form-control" required>
                 <option disabled selected value>Select an option</option>
                 <option value="challenges">Challenges</option>
                 <option value="projects">Projects</option>
@@ -89,6 +89,3 @@
       </div>
   </body>
 </html>
-
-
-just to see if this can be changed from my phone
